@@ -32,5 +32,8 @@ if has("multi_byte")
 endif
 
 let g:pandoc#syntax#conceal#blacklist = ["atx"]
+let g:pandoc#folding#fdc = 0
+let g:pandoc#folding#level = 5
+let g:pandoc#spell#enabled = 0
 
 execute pathogen#infect()
