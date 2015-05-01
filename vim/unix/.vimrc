@@ -31,5 +31,6 @@ if has("multi_byte")
   set fileencodings=ucs-bom,utf-8,latin1
 endif
 
-"Enable Pathogen
+let g:pandoc#syntax#conceal#blacklist = ["atx"]
+
 execute pathogen#infect()
