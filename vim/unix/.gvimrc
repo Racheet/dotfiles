@@ -3,6 +3,7 @@ set nocompatible
 :set guioptions-=m  "remove menu bar
 :set guioptions-=T  "remove toolbar
 :set guioptions-=r  "remove right-hand scroll bar
+:set guioptions-=L  "remove left-hand scroll bar
 
 if has("gui_running")
   if has("gui_gtk2")
@@ -13,4 +14,4 @@ if has("gui_running")
 :set lines=35 columns=150
 endif
 
-colorscheme codeschool
+colorscheme codeschoolexpanded
