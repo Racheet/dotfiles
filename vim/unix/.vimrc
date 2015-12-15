@@ -38,7 +38,7 @@ let g:pandoc#spell#enabled = 0
 
 " Enable Racket Support
 if has("autocmd")
-    au BufReadPost *.rkt,*.rktl set filetype=scheme
+    syntax off
 endif
 
 
