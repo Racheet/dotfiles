@@ -36,4 +36,10 @@ let g:pandoc#folding#fdc = 0
 let g:pandoc#folding#level = 5
 let g:pandoc#spell#enabled = 0
 
+" Enable Racket Support
+if has("autocmd")
+    au BufReadPost *.rkt,*.rktl set filetype=scheme
+endif
+
+
 execute pathogen#infect()
