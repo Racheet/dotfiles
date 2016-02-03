@@ -14,4 +14,4 @@ if has("gui_running")
 :set lines=35 columns=150
 endif
 
-colorscheme codeschoolexpanded
+colorscheme schemeschool 
