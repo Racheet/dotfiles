@@ -27,7 +27,7 @@ if has("multi_byte")
   endif
   set encoding=utf-8
   setglobal fileencoding=utf-8
-  "setglobal bomb
+  setglobal bomb
   set fileencodings=ucs-bom,utf-8,latin1
 endif
 
@@ -40,6 +40,5 @@ let g:pandoc#spell#enabled = 0
 if has("autocmd")
     syntax off
 endif
-
 
 execute pathogen#infect()

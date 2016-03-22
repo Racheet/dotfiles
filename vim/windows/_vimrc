@@ -11,9 +11,15 @@ if has("multi_byte")
   endif
   set encoding=utf-8
   setglobal fileencoding=utf-8
-  "setglobal bomb
+  setglobal bomb
   set fileencodings=ucs-bom,utf-8,latin1
 endif
+
+" Set tabs to be four spaces.
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set autoindent
 
 let g:pandoc#syntax#conceal#blacklist = ["atx"]
 let g:pandoc#folding#fdc = 0
