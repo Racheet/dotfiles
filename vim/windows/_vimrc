@@ -3,7 +3,7 @@ source $VIMRUNTIME/vimrc_example.vim
 source $VIMRUNTIME/mswin.vim
 behave mswin
 
-set autoindent
+set incsearch
 
 if has("multi_byte")
   if &termencoding == ""
@@ -30,5 +30,15 @@ let g:pandoc#spell#enabled = 0
 if has("autocmd")
     syntax off
 endif
+
+
+" Javascript symbol manipulation
+let g:javascript_conceal_function   = "λ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "→"
+let g:javascript_conceal_static     = "•"
+let g:javascript_conceal_super      = "Ω"
+
 
 execute pathogen#infect()

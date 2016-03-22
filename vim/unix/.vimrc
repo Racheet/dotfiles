@@ -7,6 +7,7 @@
 " This must be first, because it changes other options as a side effect.
 set nocompatible
 set backspace=indent,eol,start
+set incsearch
 
 " Switch syntax highlighting on
 set term=linux
@@ -40,5 +41,13 @@ let g:pandoc#spell#enabled = 0
 if has("autocmd")
     syntax off
 endif
+
+" Javascript symbol manipulation
+let g:javascript_conceal_function   = "λ"
+let g:javascript_conceal_null       = "ø"
+let g:javascript_conceal_this       = "@"
+let g:javascript_conceal_return     = "→"
+let g:javascript_conceal_static     = "•"
+let g:javascript_conceal_super      = "Ω"
 
 execute pathogen#infect()
