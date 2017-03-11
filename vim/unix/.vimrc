@@ -10,7 +10,6 @@ set backspace=indent,eol,start
 set incsearch
 
 " Switch syntax highlighting on
-set term=linux
 syntax on
 
 " Enable file type detection and do language-dependent indenting.
@@ -32,15 +31,12 @@ if has("multi_byte")
   set fileencodings=ucs-bom,utf-8,latin1
 endif
 
+color apprentice
+
 let g:pandoc#syntax#conceal#blacklist = ["atx"]
 let g:pandoc#folding#fdc = 0
 let g:pandoc#folding#level = 5
 let g:pandoc#spell#enabled = 0
-
-" Enable Racket Support
-if has("autocmd")
-    syntax off
-endif
 
 " Javascript symbol manipulation
 let g:javascript_conceal_function   = "λ"

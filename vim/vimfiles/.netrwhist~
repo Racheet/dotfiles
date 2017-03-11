@@ -1,8 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
-let g:netrw_dirhist_1='G:/Applications'
-let g:netrw_dirhist_2='G:'
-let g:netrw_dirhist_3='G:/code_snippets'
-let g:netrw_dirhist_4='G:/code_snippets/node_modules'
-let g:netrw_dirhist_5='G:/code_snippets/node_modules/factor'
-let g:netrw_dirhist_6='G:\code_snippets\node_modules\factor'
